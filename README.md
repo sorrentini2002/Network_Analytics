@@ -1,155 +1,164 @@
 # 🕵️‍♂️ Analisi della Rete dei Personaggi nel Film "Una Notte da Leoni"
 
-## 📄 Sommario
+## 📝 Sommario
+## 📝 Sommario
+- [Introduzione](#-introduzione)
+- [Obiettivi del Progetto](#-obiettivi-del-progetto)  
+- [Descrizione della Rete](#-descrizione-della-rete)  
+- [Metodologie Utilizzate](#-metodologie-utilizzate)  
+- [Risultati Principali](#-risultati-principali)  
+- [Requisiti Tecnici](#-requisiti-tecnici)  
+- [Contributi](#-contributi)  
+- [Contatti](#-contatti)  
+- [Licenza](#-licenza) 
+
+---
+
+## 📌 Introduzione
 Questo repository contiene l'analisi di una rete realistica basata sulle interazioni tra i personaggi del film *Una Notte da Leoni*.  
-L'obiettivo è identificare le proprietà della rete e confrontarla con modelli teorici studiati durante il corso.
+Lo scopo principale è studiare le proprietà della rete e confrontarla con modelli teorici per comprenderne meglio la struttura e la dinamica.
+
+L'analisi include:
+
+- **Caratteristiche della rete**: Grado medio, distribuzione del grado, diametro, lunghezza media del percorso, coefficiente di clustering.  
+- **Confronto con modelli teorici**: Reti random e modello di Watts-Strogatz.  
+- **Rilevamento di comunità**: Identificazione delle strutture sociali all'interno della rete.
 
 ---
 
 ## 🎯 Obiettivi del Progetto
-- **Analisi della Rete Reale**: Studiare la struttura della rete delle relazioni tra i personaggi del film.
-- **Identificazione di Proprietà**: Individuare caratteristiche come grado medio, distribuzione del grado, diametro, lunghezza media del percorso, coefficiente di clustering, ecc.
-- **Confronto con Modelli Teorici**: Confrontare la rete reale con modelli come la rete random e il modello di Watts-Strogatz.
-- **Rilevamento di Comunità**: Identificare possibili comunità all'interno della rete utilizzando algoritmi appropriati.
+
+### 🔍 Analisi della Rete Reale
+- Studiare la struttura della rete delle relazioni tra i personaggi del film.
+- Individuare caratteristiche come grado medio, distribuzione del grado, diametro, lunghezza media del percorso, coefficiente di clustering, ecc.
+
+### 🔬 Identificazione di Proprietà
+- Confrontare la rete reale con modelli teorici (rete random, Watts-Strogatz).
+- Verificare se la rete presenta proprietà tipiche di reti complesse, come Scale-Free o Small World.
+
+### 📊 Confronto con Modelli Teorici
+- Generare reti random e Watts-Strogatz per confrontarle con la rete reale.
+- Valutare differenze significative nelle proprietà.
+
+### 🧩 Rilevamento di Comunità
+- Identificare possibili comunità all'interno della rete utilizzando algoritmi appropriati (Edge Betweenness, Random Walk, Greedy di Newman).
 
 ---
 
 ## 🕸️ Descrizione della Rete
 
-**Composizione della rete:**
-- **Nodi**: 27 (personaggi del film)
+### 📌 Composizione della Rete
+- **Nodi**: 27 (personaggi del film)  
 - **Archi**: 112 (interazioni tra i personaggi)
 
-### 📌 Caratteristiche Principali
-
-- **Grado Medio**:  
-  - Grado medio: **7.871**
-  - Grado massimo (**k_max**): **25**
-  - Grado minimo (**k_min**): **2**
+### 📐 Caratteristiche Principali
+- **Grado Medio**: 7.871  
+- **Grado massimo (k_max)**: 25  
+- **Grado minimo (k_min)**: 2  
 
 - **Distribuzione del Grado**:  
-  La distribuzione segue una **Power Law**, tipica di una rete **Scale-Free**.
+  La distribuzione segue una **Power Law**, indicativa di una rete **Scale-Free**.
 
-- **Diametro e Lunghezza Media del Percorso**:
-  - **Diametro**: 3
-  - **Lunghezza media del percorso**: 1.72  
-  → La rete presenta la proprietà di **Ultra Small World**.
+- **Diametro**: 3  
+- **Lunghezza media del percorso**: 1.72  
+  → La rete presenta la proprietà di **Ultra Small World**
 
-- **Coefficiente di Clustering**:
-  - Valore medio: **0.869**
+- **Coefficiente di Clustering medio**: 0.869  
 
 - **Hub**:  
-  La presenza di **nodi Hub** indica la struttura Scale-Free della rete.
+  La presenza di nodi hub conferma la natura **Scale-Free** della rete.
 
 ---
 
 ## 🧪 Metodologie Utilizzate
 
 ### 🛠️ Software
-- **Gephi**: Analisi visiva e calcolo degli indici.
-- **RStudio**: Analisi statistica e rilevamento delle comunità.
-- **NetLogo**: Generazione di reti random e modelli di Watts-Strogatz.
+- **Gephi**: Analisi visiva e calcolo degli indici  
+- **RStudio**: Analisi statistica e rilevamento delle comunità  
+- **NetLogo**: Generazione di reti random e modelli di Watts-Strogatz  
 
-### 📐 Algoritmi e Procedure
-- Calcolo di:
-  - Grado medio
-  - Diametro
-  - Lunghezza media del percorso
-  - Coefficiente di clustering
-- Rilevamento comunità:
-  - Algoritmi **Edge Betweenness** e **Random Walk**
-  - Algoritmo **Greedy di Newman** per ottimizzare la modularità
-- Generazione e confronto con:
-  - Reti **Random**
-  - Modelli **Watts-Strogatz**
+### ⚙️ Algoritmi e Procedure
+
+#### 📈 Calcolo delle Proprietà della Rete
+- Grado medio  
+- Diametro  
+- Lunghezza media del percorso  
+- Coefficiente di clustering  
+
+#### 👥 Rilevamento delle Comunità
+- Algoritmo **Edge Betweenness**  
+- Algoritmo **Random Walk**  
+- Algoritmo **Greedy di Newman** per ottimizzare la modularità  
+
+#### 🔁 Generazione e Confronto con Modelli Teorici
+- Generazione di **reti random**  
+- Implementazione del **modello Watts-Strogatz**  
+
+#### 🔐 Robustezza della Rete
+- Simulazione di **rimozione casuale di nodi**  
+- Simulazione di **rimozione degli hub**
 
 ---
 
-## 📊 Risultati
+## 📊 Risultati Principali
 
 ### ✔️ Proprietà della Rete Reale
-- Distribuzione del grado segue una **Power Law**
-- **Lunghezza media del percorso** bassa → proprietà **Ultra Small World**
-- **Elevato clustering**
-- Presenza di **Hub chiave**
+- **Distribuzione del Grado**: segue una Power Law  
+- **Lunghezza Media del Percorso**: bassa (1.72) → proprietà **Ultra Small World**  
+- **Elevato Coefficiente di Clustering**: 0.869  
+- **Presenza di Hub**: indica natura **Scale-Free**
 
 ### 🔍 Confronto con Modelli Teorici
 - **Rete Random**:
   - Distribuzione binomiale del grado
-  - Basso clustering
+  - Basso clustering  
 - **Watts-Strogatz**:
-  - Clustering elevato
+  - Elevato clustering
   - Nessun hub dominante
 
-> 📌 **Conclusione**: La rete reale si differenzia da entrambi i modelli, confermandone la natura **Scale-Free**.
+📌 **Conclusione**: La rete reale si differenzia da entrambi i modelli, confermando la sua natura **Scale-Free**.
 
 ### 🔧 Robustezza della Rete
-- Rimozione **casuale** dei nodi → impatto limitato
-- Rimozione degli **Hub** → frammentazione rapida
+- **Rimozione Casuale dei Nodi**: impatto limitato  
+- **Rimozione degli Hub**: frammentazione rapida  
 
 ### 👥 Comunità
-- Identificate **3–4 comunità principali**, coerenti con la struttura narrativa del film.
+- Identificate **3–4 comunità principali**, coerenti con la struttura narrativa del film
 
-  ---
+---
 
-## 📁 Struttura del Repository
+## 💻 Requisiti Tecnici
 
-Ecco la disposizione dei file presenti nel repository:
+### 🧰 Software Necessari
+- **Gephi**  
+- **RStudio**  
+- **NetLogo**
 
-- LICENSE          → Licenza del progetto (MIT)
-
-- README.md        → Documentazione principale
-
-- archi.csv        → File CSV contenente gli archi della rete (interazioni tra personaggi)
-
-- nodi.csv         → File CSV contenente i nodi della rete (personaggi del film)
-
-- progetto NA di matteo sorrentini.pdf  → Report completo con analisi e risultati
-
-- script R per progetto.R  → Script R per analisi statistica e rilevamento comunità
-
-- the_hangover.gephi   → File Gephi per la visualizzazione della rete
-
-## ▶️ Come Eseguire l'Analisi
-
-### 1. Clonare il Repository
-
-```bash
-git clone https://github.com/sorrentini.2002/Network_Analytics.git
-```
-
-### 2. Installare le Dipendenze
-
-* Installare **Gephi**, **RStudio** e **NetLogo**
-* In R, installare i pacchetti necessari:
-
+### 📦 Librerie R
 ```r
 install.packages(c("igraph", "cluster", "ggraph", "tidygraph"))
 ```
-
-### 3. Eseguire gli Script
-
-* Aprire i file `.R` in **RStudio** per eseguire l'analisi statistica e il rilevamento delle comunità
-* Utilizzare **Gephi** per visualizzare la rete e calcolare gli indici
+## 📁 Dataset
+- `archi.csv`: Contiene gli archi della rete (interazioni tra personaggi)
+- `nodi.csv`: Contiene i nodi della rete (personaggi del film)
 
 ---
 
 ## 🤝 Contributi
+Se desideri contribuire al progetto, puoi:
+- Aprire una issue per proporre miglioramenti o segnalare problemi
+- Fare una pull request per integrare nuove analisi o correzioni
 
-Se desideri contribuire, apri una **issue** o invia una **pull request**.
-Proposte per miglioramenti, correzioni o analisi aggiuntive sono sempre benvenute!
+💡 Suggerimenti e feedback sono sempre benvenuti!
 
 ---
 
 ## 📬 Contatti
-
 **Matteo Sorrentini**  
-✉️ [sorrentini.2023085@studenti.uniroma1.it](mailto:sorrentini.2023085@studenti.uniroma1.it)
+📧 sorrentini.2023085@studenti.uniroma1.it
 
 ---
 
 ## 📜 Licenza
-
-Questo progetto è distribuito sotto licenza **MIT License**.
-
----
+Questo progetto è rilasciato sotto la **MIT License**.  
+Consulta il file `LICENSE` per ulteriori dettagli.
