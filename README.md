@@ -125,7 +125,7 @@ Proposte per miglioramenti, correzioni o analisi aggiuntive sono sempre benvenut
 ## 📬 Contatti
 
 **Matteo Sorrentini**  
-✉️ [matteo.sorrentini@example.com](mailto:sorrentini.2023085@studenti.uniroma1.it)
+✉️ [sorrentini.2023085@studenti.uniroma1.it](mailto:sorrentini.2023085@studenti.uniroma1.it)
 
 ---
 
