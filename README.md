@@ -96,7 +96,7 @@ L'obiettivo è identificare le proprietà della rete e confrontarla con modelli 
 ### 1. Clonare il Repository
 
 ```bash
-git clone https://github.com/yourusername/progetto-na.git
+git clone https://github.com/sorrentini.2002/Network_Analytics.git
 ```
 
 ### 2. Installare le Dipendenze
@@ -125,7 +125,7 @@ Proposte per miglioramenti, correzioni o analisi aggiuntive sono sempre benvenut
 ## 📬 Contatti
 
 **Matteo Sorrentini**  
-✉️ [matteo.sorrentini@example.com](mailto:matteo.sorrentini@example.com)
+✉️ [matteo.sorrentini@example.com](mailto:sorrentini.2023085@studenti.uniroma1.it)
 
 ---
 
@@ -134,5 +134,3 @@ Proposte per miglioramenti, correzioni o analisi aggiuntive sono sempre benvenut
 Questo progetto è distribuito sotto licenza **MIT License**.
 
 ---
-
-Se vuoi che ti generi direttamente un file `.md` da scaricare, puoi copiare e incollare questo testo in un editor di testo e salvare il file con estensione `.md`. Se hai bisogno di ulteriori modifiche o integrazioni, fammi sapere! 😊
