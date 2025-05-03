@@ -90,6 +90,25 @@ L'obiettivo è identificare le proprietà della rete e confrontarla con modelli 
 ### 👥 Comunità
 - Identificate **3–4 comunità principali**, coerenti con la struttura narrativa del film.
 
+  ---
+
+## 📁 Struttura del Repository
+
+Ecco la disposizione dei file presenti nel repository:
+
+- LICENSE          # Licenza del progetto (MIT)
+
+- README.md        # Documentazione principale
+
+- archi.csv        # File CSV contenente gli archi della rete (interazioni tra personaggi)
+
+- nodi.csv         # File CSV contenente i nodi della rete (personaggi del film)
+
+- progetto NA di matteo sorrentini.pdf  # Report completo con analisi e risultati
+
+- script R per progetto.R  # Script R per analisi statistica e rilevamento comunità
+
+- the_hangover.gephi   # File Gephi per la visualizzazione della rete
 
 ## ▶️ Come Eseguire l'Analisi
 
